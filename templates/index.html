@@ -6,6 +6,7 @@
     <title>ZoomInfo Cat Generator</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
     <div class="container mx-auto px-4">
@@ -14,10 +15,21 @@
             <div id="catImageContainer" class="mb-6 h-64 flex items-center justify-center">
                 <p class="text-gray-500 text-lg">Click the button to generate a cat!</p>
             </div>
-            <button id="generateCatBtn" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 flex items-center justify-center">
+            <button id="generateCatBtn" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 flex items-center justify-center mb-4">
                 <span class="mr-2">Generate Cat</span>
                 <span class="text-2xl">🐱</span>
             </button>
+            <div id="shareButtons" class="flex justify-center space-x-4">
+                <button class="share-btn" data-platform="facebook">
+                    <i class="fab fa-facebook-f"></i> Share
+                </button>
+                <button class="share-btn" data-platform="twitter">
+                    <i class="fab fa-twitter"></i> Tweet
+                </button>
+                <button class="share-btn" data-platform="linkedin">
+                    <i class="fab fa-linkedin-in"></i> Share
+                </button>
+            </div>
         </div>
     </div>
     <script src="{{ url_for('static', filename='js/app.js') }}"></script>
