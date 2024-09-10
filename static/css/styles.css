@@ -1,0 +1,22 @@
+/* ZoomInfo-inspired custom styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.text-blue-600 {
+    color: #0077b5;
+}
+
+.bg-blue-600 {
+    background-color: #0077b5;
+}
+
+.hover\:bg-blue-700:hover {
+    background-color: #005f8f;
+}
+
+#catImageContainer img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}

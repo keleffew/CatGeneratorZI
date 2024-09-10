@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZoomInfo Cat Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
+    <div class="container mx-auto px-4">
+        <h1 class="text-4xl font-bold text-blue-600 mb-8 text-center">ZoomInfo Cat Generator</h1>
+        <div class="bg-white rounded-lg shadow-lg p-8 max-w-md mx-auto">
+            <div id="catImageContainer" class="mb-6 h-64 flex items-center justify-center">
+                <p class="text-gray-500 text-lg">Click the button to generate a cat!</p>
+            </div>
+            <button id="generateCatBtn" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 flex items-center justify-center">
+                <span class="mr-2">Generate Cat</span>
+                <span class="text-2xl">🐱</span>
+            </button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
